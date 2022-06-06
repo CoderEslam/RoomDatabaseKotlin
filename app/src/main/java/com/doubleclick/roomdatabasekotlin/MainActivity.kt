@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // https://www.youtube.com/watch?v=8FPru_C5vAY&list=PLN6I_UJ53IwTi3eJrnbLSWOMLp4itwqTB&ab_channel=CodetDistro
         val student: List<Student> = arrayListOf(
             Student(111, "eslam", 23),
             Student(112, "ghazy", 25),
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
             Log.e("Data", data.toString());
 
-            for (d in db.detilsDao().getById(111)){
+            for (d in db.detilsDao().getById(111)) {
                 Log.e("Single_Row", d.toString())
             }
 
